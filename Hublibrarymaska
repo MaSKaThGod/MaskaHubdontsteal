@@ -114,7 +114,7 @@ local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 
 -- Interface Management
-local Rayfield = game:GetObjects("rbxassetid://14917912876")[1]
+local Rayfield = game:GetObjects("rbxassetid://14917968013")[1]
 
 Rayfield.Enabled = false
 
@@ -182,6 +182,7 @@ function ChangeTheme(ThemeName)
 		end
 	end
 
+        Rayfield.Main.BackgroundTransparency = 1
 	Rayfield.Main.Topbar.BackgroundColor3 = SelectedTheme.Topbar
 	Rayfield.Main.Topbar.CornerRepair.BackgroundColor3 = SelectedTheme.Topbar
 	Rayfield.Main.Shadow.Image.ImageColor3 = SelectedTheme.Shadow
